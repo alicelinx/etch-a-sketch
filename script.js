@@ -1,4 +1,5 @@
 const gridContainer = document.querySelector('.grid-container');
+const clearButton = document.querySelector('.clear-button');
 
 const applyHoverEffect = (e) => {
   if (e.target.classList.contains('grid')) {
