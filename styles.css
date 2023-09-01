@@ -11,14 +11,14 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
+  /* grid-template-columns: repeat(16, 1fr); */
   width: 35em;
   height: 35em;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .grid {
-  border: 0.1px solid white;
+  border: 0.1px solid rgb(226, 226, 226);
   background-color: white;
 }
 
