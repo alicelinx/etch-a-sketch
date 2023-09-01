@@ -22,7 +22,8 @@ body {
   background-color: white;
 }
 
-.grid:hover, .grid-clicked {
+.grid:hover, 
+.grid-clicked {
   background-color: black;
 }
 
