@@ -11,7 +11,6 @@ body {
 
 .grid-container {
   display: grid;
-  /* grid-template-columns: repeat(16, 1fr); */
   width: 35em;
   height: 35em;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -22,8 +21,7 @@ body {
   background-color: white;
 }
 
-.grid:hover, 
-.grid-clicked {
+.grid.hovered {
   background-color: black;
 }
 
@@ -37,4 +35,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.large-grid,
+.medium-grid,
+.small-grid {
+  margin-bottom: 10px;
 }

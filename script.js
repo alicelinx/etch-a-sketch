@@ -10,8 +10,7 @@ const setGridSize = function(size) {
   gridContainer.style["grid-template-columns"] = `repeat(${size}, 1fr)`;
 
   const grids = document.querySelectorAll('.grid');
-  grids.forEach(grid => grid.addEventListener('click', applyColor));
-  grids.forEach(grid => grid.addEventListener('mouseenter', applyHoverEffect));
+  grids.forEach(grid => grid.addEventListener('mousemove', applyColor));
 };
 
 const largeGrid = document.querySelector('.large-grid');
@@ -22,21 +21,15 @@ largeGrid.addEventListener('click', () => setGridSize(16));
 mediumGrid.addEventListener('click', () => setGridSize(32));
 smallGrid.addEventListener('click', () => setGridSize(64));
 
-const applyHoverEffect = (e) => {
-  if (e.target.classList.contains('grid')) {
-    e.target.classList.add(':hover');
-  }
-};
-
 const applyColor = (e) => {
   if (e.target.classList.contains('grid')) {
-    e.target.classList.add('grid-clicked');
+    e.target.classList.add('hovered');
   }
 };
 
 const clearGrid = () => {
-  const divs = document.querySelectorAll('.grid-clicked');
-  divs.forEach(div => div.classList.remove('grid-clicked'));
+  const divs = document.querySelectorAll('.hovered');
+  divs.forEach(div => div.classList.remove('hovered'));
 };
 
 const clearButton = document.querySelector('.clear-button');
