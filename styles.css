@@ -39,6 +39,8 @@ body {
 
 .large-grid,
 .medium-grid,
-.small-grid {
+.small-grid,
+.color-button,
+.clear-button {
   margin-bottom: 10px;
 }
