@@ -25,7 +25,7 @@ colorButton.addEventListener('click', () => startColorMode());
 
 const applyColor = (e) => {
   if (e.target.classList.contains('grid')) {
-    e.target.classList.add('hovered');
+    e.target.style['background-color'] = 'black';
   }
 };
 
@@ -33,7 +33,6 @@ const clearGrid = () => {
   const grids = document.querySelectorAll('.grid');
   grids.forEach(grid => {
     grid.style['background-color'] = 'white';
-    grid.classList.remove('hovered');
   });
 };
 
@@ -48,7 +47,6 @@ const startColorMode = () => {
 const applyRandomColor = (e) => {
   if (e.target.classList.contains('grid')) {
     const grid = e.target;
-    grid.classList.add('hovered');
     const randomColor = getRandomColor();
     grid.style['background-color'] = randomColor;
   }

@@ -21,10 +21,6 @@ body {
   background-color: white;
 }
 
-.grid.hovered {
-  background-color: black;
-}
-
 .left-navbar {
   border: 1px solid peru;
   border-radius: 10px;
