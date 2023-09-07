@@ -2,6 +2,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(22, 22, 74);
+}
+
+h1 {
+  font-family: 'Rowdies', cursive;
+  color: peru;
 }
 
 .container{
@@ -13,7 +19,9 @@ body {
   display: grid;
   width: 35em;
   height: 35em;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-color: white;
+  box-shadow: rgba(255, 254, 254, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
+  cursor: url(./pencil-cursor.png), default
 }
 
 .grid {
@@ -22,15 +30,20 @@ body {
 }
 
 .left-navbar {
-  border: 1px solid peru;
+  border: 3px dotted peru;
   border-radius: 10px;
   height: 20em;
-  width: 10em;
+  width: 8em;
   padding: 2em;
   margin-right: 3em;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Handjet', cursive;
+}
+
+h2 {
+  color: peru
 }
 
 .large-grid,
@@ -39,4 +52,35 @@ body {
 .color-button,
 .clear-button {
   margin-bottom: 10px;
+  font-size: 20px;
+  font-family: 'Handjet', cursive;
+  cursor: pointer;
+  background-color: burlywood;
+  border: none;
+  border-radius: 5px;
+}
+
+.large-grid:hover,
+.medium-grid:hover,
+.small-grid:hover,
+.color-button:hover,
+.clear-button:hover {
+  background-color: tomato;
+}
+
+footer {
+  font-size: 14px;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  color: peru;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+img {
+  margin-top: 3px;
 }
